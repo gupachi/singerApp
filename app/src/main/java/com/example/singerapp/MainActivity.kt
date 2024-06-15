@@ -1,7 +1,7 @@
 package com.example.singerapp
 
-import Singer1Fragment
 
+import Singer1Fragment
 import Singer3Fragment
 import android.os.Bundle
 import android.view.Menu
@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.singer_menu, menu)
