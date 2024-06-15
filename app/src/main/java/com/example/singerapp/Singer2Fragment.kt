@@ -1,32 +1,29 @@
+package com.example.singerapp.ui
 
-package com.example.singerapp
-
-import InventoryViewModel
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import com.example.singerapp.databinding.Singer2PageBinding
+import androidx.fragment.app.activityViewModels
+import com.example.singerapp.R
+import com.example.singerapp.SingerViewModel
+import com.example.singerapp.databinding.FragmentSinger2Binding
 
-
-class Singer2Fragment: Fragment() {
-
-    private val viewModel: InventoryViewModel by viewModels()
+class Singer2Fragment : Fragment() {
+    private lateinit var binding: FragmentSinger2Binding
+    private val viewModel: SingerViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // 바인딩 클래스 타입을 명시합니다.
-        val binding: Singer2PageBinding = DataBindingUtil.inflate(
-            inflater, R.layout.singer2_page, container, false
-        )
+        // 데이터 바인딩 설정
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_singer2, container, false)
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
+
         return binding.root
     }
 }
-
-

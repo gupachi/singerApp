@@ -1,3 +1,8 @@
+package com.example.singerapp
+
+import Singer1Fragment
+
+import Singer3Fragment
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -5,11 +10,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.example.singerapp.R
-import com.example.singerapp.Singer1Fragment
-import com.example.singerapp.Singer2Fragment
-import com.example.singerapp.Singer3Fragment
 import com.example.singerapp.databinding.ActivityMainBinding
+import com.example.singerapp.ui.Singer2Fragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -53,9 +55,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun replaceFragment(fragment: Fragment) {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, fragment)
-            .commit()
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container, fragment)
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
     }
 
 }

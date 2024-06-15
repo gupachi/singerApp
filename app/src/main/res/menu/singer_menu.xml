@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_fragment_one"
-        android:title="Fragment One" />
+        android:title="{" />
     <item
         android:id="@+id/menu_fragment_two"
         android:title="Fragment Two" />

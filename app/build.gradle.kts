@@ -53,6 +53,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.media3:media3-common:1.3.1")
     kapt ("androidx.room:room-compiler:2.6.1")
     implementation ("androidx.room:room-runtime:2.6.1")
 
