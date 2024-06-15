@@ -53,11 +53,13 @@ android {
 }
 
 dependencies {
+    
     implementation("androidx.media3:media3-common:1.3.1")
+
     kapt ("androidx.room:room-compiler:2.6.1")
     implementation ("androidx.room:room-runtime:2.6.1")
-
     implementation("androidx.room:room-ktx:2.6.1")
+
     implementation ("androidx.fragment:fragment-ktx:1.3.6")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
     implementation("androidx.core:core-ktx:1.13.1")
