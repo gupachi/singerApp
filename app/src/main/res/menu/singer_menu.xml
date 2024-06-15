@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_fragment_one"
-        android:title="{" />
+        android:title="가수 1" />
     <item
         android:id="@+id/menu_fragment_two"
-        android:title="Fragment Two" />
+        android:title="가수 2" />
     <item
         android:id="@+id/menu_fragment_three"
-        android:title="Fragment Three" />
+        android:title="가수 3" />
 </menu>
