@@ -18,15 +18,22 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/purple_200"
-            app:title="Singer App"
+            android:background="@color/deepgray"
+            app:title="내 플레이리스트"
             app:titleTextColor="@android:color/white" />
+
 
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="playlist"/>
+        </FrameLayout>
 
     </LinearLayout>
 </layout>
