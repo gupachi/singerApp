@@ -13,6 +13,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.singerapp.databinding.ActivityMainBinding
 import com.example.singerapp.ui.Singer2Fragment
+import com.google.firebase.inappmessaging.MessagesProto.Button
 
 
 class MainActivity : AppCompatActivity() {
@@ -64,5 +65,5 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }
-
+    
 }

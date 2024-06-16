@@ -33,7 +33,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="26sp"
                 android:text="playlist"/>
-        </FrameLayout>
 
+
+        </FrameLayout>
     </LinearLayout>
 </layout>
